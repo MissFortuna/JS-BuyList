@@ -1,3 +1,72 @@
-h1 {
-    color: yellow;
+body{
+background-color: #DADADA;
+}
+
+
+#simplestylish {
+    border-radius:4px;
+    padding: 15px;
+    margin:auto;
+    margin-bottom: 50%;
+    margin-top: 20%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.block1{
+background-color: #ffffff;
+width: 300px;
+height: 40px;
+}
+
+
+.block2h{
+	width: 40px;
+	height: 50px;
+}
+
+.input-style{
+font-family:Arial;
+color:black;
+}
+
+.bluebutton{
+background-color: #1678c2;
+color:white;
+font-family: Arial;
+font-size:10px; 
+border:none;
+padding:5px;
+height:22px;
+border-radius: 1px;
+height: 
+}
+
+.bluebutton :hover{
+
+}
+
+.bluebutton :active{
+	background-color:#104b78;
+}
+
+input[type="text"]{
+	font-family: Calibri;
+	font-weight: 1px;
+	width: 225px;
+	height: 20px;
+	color: #000000;
+	border-radius: 2px;
+	border: 0.55px solid #cccccc;
+	outline-style: none;
+	text-align: left;
+}
+
+hr{
+	border:none;
+	color:black;
+}
+
+
+input[type="text"]:focus {
+  
 }
