@@ -8,13 +8,31 @@
 
 <div id="simplestylish" class="block1">
 <div class="input-style">
-	<input type="text" placeholder="Назва товару"> <button class="bluebutton"><strong>Додати</strong></button>
-	<hr>
-</div>
-</div>
-<hr>
-<div id="simplestylish" class="block2">
+	<input type="text" placeholder="   Назва товару"> <button class="bluebutton"><strong>Додати</strong></button>
+	</div>
+<ul>
 
+<li>
+<input class="input-b"value="Помідорчики">
+<div class="box">    
+        <label for="qty"><abbr title="Quantity"></abbr></label>
+        <button class="but" id="down" onclick="modify_qty(-1)">-</button>
+        <input class="input-c" id="qty" value="2" />
+        <button class="but" id="up" onclick="modify_qty(1)">+</button>
+    </div>
+<button class="buy-button"><strong>Додати</strong></button>
+<button id="x-but"class="buy-button"><strong>x</strong></button>
+</li>
+<li><p class="already-b">Сирочок</p>
+</li>
+
+</div>
+</ul>
+</div>
+<div id="simplestylish1" class="block2">
+<h6>Залишилося</h6>
+<div class="already-bought"></div>
+<h6>Куплено</h6>
 </div>
     <link rel="stylesheet" type="text/css" href="main.css" />
 </body>
