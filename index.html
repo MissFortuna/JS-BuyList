@@ -13,26 +13,70 @@
 <ul>
 
 <li>
-<input class="input-b"value="Помідорчики">
+<input  class="input-b"value="Смородинка">
 <div class="box">    
         <label for="qty"><abbr title="Quantity"></abbr></label>
         <button class="but" id="down" onclick="modify_qty(-1)">-</button>
-        <input class="input-c" id="qty" value="2" />
-        <button class="but" id="up" onclick="modify_qty(1)">+</button>
+        <input type="tel" pattern="[0-9]{5,30}" class="input-c"id="qty" value="2"  disabled />
+        <button class="but" id="up" onclick="modify_qty(1)"><strong>+</strong></button>
     </div>
-<button class="buy-button"><strong>Додати</strong></button>
+<button class="buy-button act"><strong>Куплено</strong></button>
 <button id="x-but"class="buy-button"><strong>x</strong></button>
 </li>
-<li><p class="already-b">Сирочок</p>
+
+<li>
+<input  class="input-b"value="Земляничка">
+<div class="box">    
+        <label for="qty"><abbr title="Quantity"></abbr></label>
+        <button class="but-block" onclick="modify_qty(-1)"><strong>-</strong></button>
+        <input class="input-c" id="qty" value="1"  disabled />
+        <button class="but" id="up" onclick="modify_qty(1)"><strong>+</strong></button>
+    </div>
+<button class="buy-button act"><strong>Куплено</strong></button>
+<button id="x-but"class="buy-button"><strong>x</strong></button>
+</li>
+
+<li><p class="input-bb" id="already-bought">Сирочок</p>
+<div class="box"> 
+<input class="input-c third" id="qty" value="2" disabled />
+</div>
+
+<button class="buy-button-not act"><strong>Не куплено</strong></button>
 </li>
 
 </div>
 </ul>
 </div>
+
+<div>
 <div id="simplestylish1" class="block2">
-<h6>Залишилося</h6>
-<div class="already-bought"></div>
-<h6>Куплено</h6>
+<h3>Залишилося</h4>
+</div>
+<ul>
+<li class="bb">
+<div class="horizontal">
+<ul>
+<li class="need-to-buy"><strong>Смородинка</strong>
+<div class="counter"><strong>2</strong></div>
+</li>
+<li class="need-to-buy"><strong>Земляничка</strong>
+<div class="counter"><strong>1</strong></div>
+</li>
+</ul>
+</div>
+</li>
+<li class="bb">
+<h3>Куплено</h3>
+</li>
+<li class="bb second">
+<div class="horizontal">
+<ul>
+<li class="need-to-buy had-to-buy"><strong>Сирочок</strong>
+<div class="counter"><strong>2</strong></div></li>
+</ul>	
+</div>
+</li>
+</ul>
 </div>
     <link rel="stylesheet" type="text/css" href="main.css" />
 </body>
