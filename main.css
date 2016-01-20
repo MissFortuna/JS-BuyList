@@ -12,7 +12,7 @@ outline:none;
  border-radius:4px;
     padding: 15px;
     margin:auto;
-    margin-bottom: 60%;
+    margin-bottom: 10%;
     margin-top: 6.5%;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
     float:left;
@@ -26,21 +26,24 @@ height: 40px;
 
 
 #simplestylish1 {
-	position: relative;
-    border-radius:4px;
-    margin-left: 60px;
-    margin-top: 6.5%;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    float:left;
-    margin-left: 3%;
+   outline: none;
+   float:none;
 }
 
+
 .block2{
+	float:none;
+	position: absolute;
+border-radius:4px;
+    left: 70.5%;
+    top:13%; 
+margin-left: 1%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
 	background-color: #ffffff;
 	width: 300px;
 	height: 30px;
-	padding-bottom: 40px;
-	right:3px;
+	padding-bottom: 60px;
+
 }
 
 
@@ -94,7 +97,7 @@ input[type="text"]{
 	text-align: left;
 }
 .block1 li{
-	float: left;
+	float: none;
 background-color:white;
 border-top:1px solid #bfbfbf;
 border-bottom:0.75px solid #bfbfbf;
@@ -104,6 +107,7 @@ height: 65px;
 font-family: Calibri;
 font-size: 14px;
 list-style-type: none;
+position: relative;
 }
 
 
@@ -304,15 +308,7 @@ box-shadow: 0 2px #767676;
 opacity: 1;
 }
 
-.bo-list{
-	height: 50px;
-	width: 300px;
-	border-radius:4px;
-	background-color: white;
-padding-bottom: 40px;
-margin-left: 68.25%;
-margin-bottom: 50px;
-}
+
 
 h3{
 	text-align: center;
@@ -323,8 +319,9 @@ h3{
 }
 
 .bb{
-float: left;
-margin-left: 39px;
+margin-left: -40px;
+bottom:30px;
+float: none;
 background-color:white;
 border-top:1px solid #bfbfbf;
 border-bottom:0.75px solid #bfbfbf;
@@ -366,4 +363,20 @@ padding-right: 45px;
 	color:white;
 	top:7px;
 	right:10px;
+}
+
+.horizontal ul{
+	right:40px;
+}
+.had-to-buy{
+	text-decoration:line-through;
+
+}
+.booo{
+	text-decoration:line-through;
+}
+
+.final{
+	margin:10px;
+	float:none;
 }
