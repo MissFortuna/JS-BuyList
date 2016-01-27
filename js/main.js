@@ -2,60 +2,139 @@
  * Created by Elizabeth on 1/24/2016.
  */
 
-/* It is a function of counter
-1. Problem 1
-Now it works only with the first one in the list. All buttons work with the first one.
-Tip: In my opinion, there is a problem with equal id's in the each counter.
 
-2. Problem 2
-When counter of products is 1 or 0 there is not blocked "-" button.
-Tips:
-1) The smallest counter of color is 1;
-2) When it is 1, change color of '0' button.
+$(function(){
+//This	function	will	be	called
+//	after	the	DOM	was	loaded	and	ready
+//Here	we	can	place	all	jQuery	Code
 
-3. Problem 3
-You need to add synchronization with block 2.
-Tip: use div's in the second block.
-*/
+//does not work
+    $('button.bluebutton').click(function(){
+        var newElem = $(".input-c").val();
+        if(newElem!==""){
+            $(".input-c").val("");
+            $("ul.edition").append('<li class="product">'+
+                '<input  class="input-b"value=newElem>'+
+                ' <p class="input-bb already-bought">'+newElem+'</p>'+
 
-function modify_qty(val) {
-    var qty = document.getElementById('qty').value;
-    var new_qty = parseInt(qty,10) + val;
+                '<div class="box">'+
+                '<button class="but down but-block">-</button>'+
+                ' <span class="input-c">1</span>'+
+                '<button class="but up" onclick="modify_qty(1)"><strong>+</strong></button>'+
+                '/<div>'+
 
-    if (new_qty < 0) {
-        new_qty = 0;
-    }
-
-    document.getElementById('qty').value = new_qty;
-    return new_qty;
-}
-
-/*It is a first idea, how to add first three one products
- Problem: it does not work.
-*/
-
-var li1	=	$("<li>Liza is cool!</li>");
-$(".edition li").append(li);
-
-
-/*There is a code which add elements.
-* Problem 1:
-* Right now I don't know what to do with it.
-* Tips:
-* 1)Use your names of classes in the div. Remember about resizing of blocks.
-* 2)Synchronization with block 2.
-* */
-var LIST	=	$('.list-of-items');
-var ITEM_TEMPLATE	=	$('.one-item').html();
-function	addItem(title)	{
-    var node	=	$(ITEM_TEMPLATE);	//Create	new	HTML	node
-    node.find(".title").text(title);	//Set	product	title
-//Delete	Action
-    node.find(".delete-button").click(function(){
-        node.remove();
+                '<button class="buy-button act"><strong>Куплено</strong></button>'+
+                '<button class="x-but"><strong>x</strong></button>'+
+                '<button class="buy-button-not act"><strong>Не куплено</strong></button>'+
+                '</li>');
+//bigger
+        }
     });
-    LIST.append(node);	//Add	to	the	end	of	the	list
-}
+
+
+    // it is work
+    $('.x-but').click(function (node) {
+            $(this).parent().hide();
+            node.remove();
+    });
+
+        // it is work, but color of block button start work from 2.
+        $('.up').click(function(){
+            var old=$(this).parent().find(".input-c").text();
+
+            if(old>=2){
+                $(this).parent().find(".down").removeClass("but-block");
+            }
+            var num=1;
+            for(var i=1;i<30;i++){
+                if(i==old){
+                    num=i+1;
+                    break;
+                }
+            }
+            $(this).parent().find(".input-c").text(num);
+        });
+        $('.down').click(function(){
+            var old=$(this).parent().find(".input-c").text();
+            if(old==1){
+                $(this).parent().find(".down").addClass("but-block");
+            }
+            if(old>=2){
+                $(this).parent().find(".down").removeClass("but-block");
+            }
+            var num=1;
+            for(var i=30;i>1;i--){
+                if(i==old){
+                    num=i-1;
+                    break;
+                }
+            }
+
+            $(this).parent().find(".input-c").text(num);
+        });
+
+    $('.buy-button').click(function () {
+        /*$(this).parent().find('.input-b').addClass("crossedOut");*/
+        $(this).parent().find('.but').hide();
+        //  $(this).parent().find('.input-c').show();
+        //$(this).className = 'buy-button-not';
+        $(this).parent().find('.buy-button').addClass("buy-button-not");
+        $(this).parent().find('.buy-button').text("Не куплено");
+        $(this).parent().find('.x-but').hide();
+        //$(this).parent().find('.buy-button-not').removeClass("buy-button");
+    });
+
+    /*
+    $('.buy-button-not').click(function () {
+        /*$(this).parent().find('.input-b').addClass("crossedOut");*/
+        //$(this).parent().find('.but').show();
+      //  $(this).className = 'buy-button';
+    //    $(this).parent().find('.buy-button-not').text("Куплено");
+  //      $(this).parent().find('.x-but').show();
+        // $(this).parent().find('.buy-button').removeClass("buy-button-not");
+//    });
+
+});
 /*
 * Also there no code with editing of elements of the lists.
 * */
+
+//does not work
+//$(function () {
+/*
+ var title;
+ var LIST = $('.editing');
+ var ITEM_TEMPLATE = $('.product').html();
+ $('#main-input').click(function () {
+ $('#main-input').val("");
+ })
+ $('#bluebutton').click(function () {
+ title = $('#main-input').val();
+ var node = $(ITEM_TEMPLATE);
+ node.find("#already-bought").text(title);
+ LIST.append(node);
+ $('#main-input').val("");
+ $('#main-input').focus();
+
+ });
+
+
+ $(function(){
+ var BASKET = $(".edition");
+ var PRODUCT_TEMPLATE ='<li class="product">'+$(".product").html()+'</li>';
+ var LIST_TEMPLATE = '<ul class="need_buy">'+$(".ul").html()+'</ul>';
+ var LIST = $('.still_need');
+ var AMOUNT_CIRCLE =  '<div class="counter"><strong>1</strong></div>';
+
+ $(".input-style").find("input").focus();
+
+ $(".bluebutton").click(function(){newItem();})
+ $(".input-style").find(":input").keyup(function(e){
+ if(e.keyCode == 13) {
+ //newItem(); //work
+ $(".bluebutton").click();
+ return false;
+ }
+ });
+
+ */

@@ -1,5 +1,6 @@
 body{
-background-color: #DADADA;
+background-color: #a4c8da;
+
 outline:none;
 }
 
@@ -136,9 +137,9 @@ padding-left: 4px;
 	outline-style: none;
 }
 
-#already-bought{
+.already-bought{
 	text-decoration: line-through;
-	display: inline-block;
+	display: none;
 	padding-top: 5px;
 	padding-right: 5px;
 	height:13px;
@@ -230,7 +231,7 @@ background-color: #e4e4e4;
     width: 110px;
     padding: 12px 12px;
     text-decoration: none;
-    display: inline-block;
+    display:inline-block;
     font-family: Arial;
     font-size: 14px;
     margin: 1px 1px;
@@ -241,6 +242,18 @@ margin-left: 233px;
 
 
 .x-but{
+    border: 30px;
+    border-color:  #d2d2d2;
+    border-radius: 5px;
+    height:33px;
+    padding: 12px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Arial;
+    font-size: 14px;
+    margin: 1px 1px;
+    cursor: pointer;
 	color: white;
 	margin-left: 10px;
 	height: 33px;

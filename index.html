@@ -12,36 +12,41 @@
         <input type="text" id="main-input" placeholder="   Назва товару"> <button class="bluebutton"><strong>Додати</strong></button>
     </div>
     <ul class="edition">
-        <li>
+        <li class="product">
             <input  class="input-b"value="Смородинка">
+            <p class="input-bb already-bought">Смородинка</p>
             <div class="box">
-                <label for="qty"><abbr title="Quantity"></abbr></label>
-                <button class="but down" onclick="modify_qty(-1)">-</button>
-                <input type="tel" pattern="[0-9]{5,30}" class="input-c"id="qty" value="2"  disabled />
-                <button class="but up" id="up" onclick="modify_qty(1)"><strong>+</strong></button>
-            </div>
-            <button class="buy-button act"><strong>Куплено</strong></button>
-            <button class="buy-button x-but"><strong>x</strong></button>
-        </li>
-
-        <li>
-            <input  class="input-b"value="Земляничка">
-            <div class="box">
-                <label for="qty"><abbr title="Quantity"></abbr></label>
-                <button class="but-block" onclick="modify_qty(-1)"><strong>-</strong></button>
-                <input class="input-c" id="qty" value="1"  disabled />
+                <button class="but down but-block">-</button>
+                <span class="input-c">1</span>
                 <button class="but up" onclick="modify_qty(1)"><strong>+</strong></button>
             </div>
             <button class="buy-button act"><strong>Куплено</strong></button>
-            <button class="buy-button x-but"><strong>x</strong></button>
+            <button class="x-but"><strong>x</strong></button>
+
         </li>
-
-        <li><p class="input-bb" id="already-bought">Сирочок</p>
+        <li class="product">
+            <input  class="input-b"value="Земляничка">
+            <p class="input-bb already-bought">Земляничка</p>
             <div class="box">
-                <input class="input-c third" id="qty" value="2" disabled />
+                <button class="but down but-block" onclick="modify_qty(-1)">-</button>
+                <span class="input-c">1</span>
+                <button class="but up" onclick="modify_qty(1)"><strong>+</strong></button>
             </div>
+            <button class="buy-button act"><strong>Куплено</strong></button>
+            <button class=" x-but"><strong>x</strong></button>
 
-            <button class="buy-button-not act"><strong>Не куплено</strong></button>
+        </li>
+        <li class="product">
+            <input  class="input-b"value="Сирочок">
+            <p class="input-bb already-bought">Cирочок</p>
+            <div class="box">
+                <button class="but down but-block" onclick="modify_qty(-1)">-</button>
+                <span class="input-c">1</span>
+                <button class="but up" onclick="modify_qty(1)"><strong>+</strong></button>
+            </div>
+            <button class="buy-button act"><strong>Куплено</strong></button>
+            <button class=" x-but"><strong>x</strong></button>
+
         </li>
     </ul>
 </div>
@@ -49,9 +54,9 @@
 <div class="block2">
 
     <h3>Залишилося</h3>
-    <ul>
+    <ul class="still_need">
         <li class="bb">
-            <ul>
+            <ul class="need_buy">
                 <li class="need-to-buy"><strong>Смородинка</strong>
                     <div class="counter"><strong>2</strong></div>
                 </li>
