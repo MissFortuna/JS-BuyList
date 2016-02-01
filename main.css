@@ -30,9 +30,11 @@ border-radius:4px;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
 	background-color: #ffffff;
 	width: 310px;
-	height: 30px;
+	height: 20px;
 	float:left;
+    margin: auto;
 	padding-bottom: 60px;
+    margin-left: 20px;
 
 
 }
@@ -75,7 +77,7 @@ background-color:#154e79;
 }
 
 input[type="text"]{
-	padding-left: 2px; 
+	padding-left: 2px;
 	font-family: Calibri;
 	font-size: 20px;
 	width: 655px;
@@ -106,14 +108,15 @@ list-style-type: none;
 
 .box {
 display: inline-block;
-padding-top: 10px;
-padding-left: 200px;
-padding-bottom: 10px;
+padding-top: 20px;
+padding-left: 100px;
+padding-bottom: 20px;
 }
 
 .input-b {
-padding-top: 30px;
-padding-left: 20px;
+
+padding-left: 30px;
+   padding-top: 30px;
 	font-size: 1.2em;
 	height:13px;
 	width:100px;
@@ -125,43 +128,35 @@ padding-left: 20px;
 }
 
 .input-bb {
-padding-top: 30px;
-padding-left: 4px;
-	font-size: 1.2em;
-	height:13px;
-	width:100px;
-	background-color: #ffffff;
-	text-align: center;
-	border-width: 0;
-	color: #5d5d5d;
-	outline-style: none;
+    padding-left: 30px;
+    padding-top: 10px;
+    height:13px;
+    width:100px;
+    background-color: #ffffff;
+    text-align: center;
+    border-width: 0;
+    color: #5d5d5d;
+    outline-style: none;
+    text-decoration: line-through;
+    display: none;
+    font-size: 17px;
+    font-family: Calibri;
 }
 
-.already-bought{
-	text-decoration: line-through;
-	display: none;
-	padding-top: 5px;
-	padding-right: 5px;
-	height:13px;
-	width: 100px;
-	color: #5d5d5d;
-	font-size: 1.3em;
-
-}
 
 
 
 
 .input-c {
 	font-size: 1.2em;
-	height:27px;
-	width:27px;
+	height:40px;
+	width:40px;
 	background-color: #dbdbdb;
 	border-radius:4px;
 	text-align: center;
 	border-width: 0;
 	color: #5d5d5d;
-	margin:0 10px 0 10px;
+    margin:0 10px 0 10px;
 	outline-style: none;
 }
 
@@ -179,7 +174,6 @@ label {
 	color:white;
 	border:none;
 	text-align: center;
-
 }
 
 .up{
@@ -218,7 +212,7 @@ background-color: #e4e4e4;
     margin: 1px 1px;
 cursor: pointer;
 box-shadow: 0 2px #d2d2d2;
-margin-left: 180px;
+margin-left: 300px;
 }
 
 .buy-button-not{
@@ -235,9 +229,10 @@ background-color: #e4e4e4;
     font-family: Arial;
     font-size: 14px;
     margin: 1px 1px;
+    display:none;
 cursor: pointer;
 box-shadow: 0 2px #d2d2d2;
-margin-left: 233px;
+    margin-left: 380px;
 }
 
 
@@ -313,9 +308,10 @@ opacity: 1;
 h3{
 	text-align: center;
 	margin-right: 15px;
+
 	margin-top: 25px;
 	font-family: Arial;
-	font-size: 25px;
+	font-size: 30px;
 }
 
 .bb{
@@ -327,30 +323,32 @@ border-top:1px solid #bfbfbf;
 border-bottom:0.75px solid #bfbfbf;
 border-radius: 2px;
 width: 310px;
-height: 80px;
+height: 180px;
 font-family: Calibri;
 font-size: 14px;
 list-style-type: none;
 }
 
 .need-to-buy{
-	top:30px;
+	top:15px;
 	right: 35px;
 	position: relative;
-	margin: 1%;
-	padding-top:13px;
-padding-bottom:13px;
+	margin-left:30px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+	padding-top:17px;
+padding-bottom:17px;
 padding-left:5px;
 padding-right: 39px;
-
-	display: inline;
-	list-style-type: none;
-	height: 80px;
+	height: 10px;
 	font-size: 15px;
 	text-align: left;
-	width: 10px;
+	width: 100px;
 	border-radius: 9px;
 	background-color:#dbdbdb;
+    list-style-type: none;
+    font-family: Arial;
+    float:left;
 }
 .counter{
 	position: absolute;
@@ -365,16 +363,12 @@ padding-right: 39px;
 	right:10px;
 }
 
-.horizontal ul{
-	right:40px;
-}
 .had-to-buy{
 	text-decoration:line-through;
+    display:none;
 
 }
 .booo{
 	text-decoration:line-through;
 }
-.had-to-buy{
-	margin-top:10%;
-}
+
