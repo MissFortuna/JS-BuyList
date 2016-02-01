@@ -7,82 +7,82 @@
 <body>
 
 <div class="main-page">
-<div class="block1">
-    <div class="input-style">
-        <input type="text" id="main-input" placeholder="   Назва товару"> <button class="bluebutton"><strong>Додати</strong></button>
+    <div class="block1">
+        <div class="input-style">
+            <input type="text" id="main-input" placeholder="   Назва товару"> <button class="bluebutton"><strong>Додати</strong></button>
+        </div>
+        <ul class="edition">
+            <!--<li class="product">-->
+            <!--<input  class="input-b"value="Смородинка">-->
+            <!--<p class="input-bb already-bought">Смородинка</p>-->
+            <!--<div class="box">-->
+            <!--<button class="but down but-block">-</button>-->
+            <!--<span class="input-c">1</span>-->
+            <!--<button class="but up"><strong>+</strong></button>-->
+            <!--</div>-->
+            <!--<button class="buy-button act"><strong>Куплено</strong></button>-->
+            <!--<button class="x-but"><strong>x</strong></button>-->
+
+            <!--</li>-->
+            <!--<li class="product">-->
+            <!--<input  class="input-b"value="Земляничка">-->
+            <!--<p class="input-bb already-bought">Земляничка</p>-->
+            <!--<div class="box">-->
+            <!--<button class="but down but-block" >-</button>-->
+            <!--<span class="input-c">1</span>-->
+            <!--<button class="but up" ><strong>+</strong></button>-->
+            <!--</div>-->
+            <!--<button class="buy-button act"><strong>Куплено</strong></button>-->
+            <!--<button class=" x-but"><strong>x</strong></button>-->
+
+            <!--</li>-->
+            <!--<li class="product">-->
+            <!--<input  class="input-b"value="Сирочок">-->
+            <!--<p class="input-bb already-bought">Cирочок</p>-->
+            <!--<div class="box">-->
+            <!--<button class="but down but-block" >-</button>-->
+            <!--<span class="input-c">1</span>-->
+            <!--<button class="but up" ><strong>+</strong></button>-->
+            <!--</div>-->
+            <!--<button class="buy-button act"><strong>Куплено</strong></button>-->
+            <!--<button class=" x-but"><strong>x</strong></button>-->
+
+            <!--</li>-->
+        </ul>
     </div>
-    <ul class="edition">
-        <li class="product">
-            <input  class="input-b"value="Смородинка">
-            <p class="input-bb already-bought">Смородинка</p>
-            <div class="box">
-                <button class="but down but-block">-</button>
-                <span class="input-c">1</span>
-                <button class="but up" onclick="modify_qty(1)"><strong>+</strong></button>
-            </div>
-            <button class="buy-button act"><strong>Куплено</strong></button>
-            <button class="x-but"><strong>x</strong></button>
 
-        </li>
-        <li class="product">
-            <input  class="input-b"value="Земляничка">
-            <p class="input-bb already-bought">Земляничка</p>
-            <div class="box">
-                <button class="but down but-block" onclick="modify_qty(-1)">-</button>
-                <span class="input-c">1</span>
-                <button class="but up" onclick="modify_qty(1)"><strong>+</strong></button>
-            </div>
-            <button class="buy-button act"><strong>Куплено</strong></button>
-            <button class=" x-but"><strong>x</strong></button>
+    <div class="block2">
 
-        </li>
-        <li class="product">
-            <input  class="input-b"value="Сирочок">
-            <p class="input-bb already-bought">Cирочок</p>
-            <div class="box">
-                <button class="but down but-block" onclick="modify_qty(-1)">-</button>
-                <span class="input-c">1</span>
-                <button class="but up" onclick="modify_qty(1)"><strong>+</strong></button>
-            </div>
-            <button class="buy-button act"><strong>Куплено</strong></button>
-            <button class=" x-but"><strong>x</strong></button>
-
-        </li>
-    </ul>
-</div>
-
-<div class="block2">
-
-    <h3>Залишилося</h3>
-    <ul class="still_need">
-        <li class="bb">
-            <ul class="need_buy">
-                <li class="need-to-buy"><strong>Смородинка</strong>
-                    <div class="counter"><strong>2</strong></div>
-                </li>
-                <li class="need-to-buy"><strong>Земляничка</strong>
-                    <div class="counter"><strong>1</strong></div>
-                </li>
-            </ul>
-        </li>
-        <li class="bb">
-            <h3>Куплено</h3>
-        </li>
-        <li class="bb second">
-            <div class="horizontal">
-                <ul>
-                    <li class="need-to-buy had-to-buy"><strong>Сирочок</strong>
-                        <div class="counter booo"><strong>2</strong></div></li>
+        <h3>Залишилося</h3>
+        <ul class="still_need">
+            <li class="bb">
+                <ul class="need_buy">
+                    <li class="need-to-buy"><strong>Смородинка</strong>
+                        <div class="counter"><strong>2</strong></div>
+                    </li>
+                    <li class="need-to-buy"><strong>Земляничка</strong>
+                        <div class="counter"><strong>1</strong></div>
+                    </li>
                 </ul>
-            </div>
-        </li>
-    </ul>
+            </li>
+            <li class="bb">
+                <h3>Куплено</h3>
+            </li>
+            <li class="bb second">
+                <div class="horizontal">
+                    <ul>
+                        <li class="need-to-buy had-to-buy"><strong>Сирочок</strong>
+                            <div class="counter booo"><strong>2</strong></div></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
 </div>
-</div>
-    <link rel="stylesheet" type="text/css" href="main.css" />
+<link rel="stylesheet" type="text/css" href="main.css" />
 <script	type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js">	</script>
 <script	type="text/javascript" src="js/main.js">	</script>
-  
+
 
 </body>
 </html>
