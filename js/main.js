@@ -92,7 +92,11 @@ $(function(){
             node3.remove();
         });
 
-        /*
+        /* it must work, but it don't
+
+        but after costumer buy a product, input become blocked, and
+        when he come back, it stop be disabled
+
         node.find('.input-b').focus(function () {
             var before =node.find('.input-b').val();
             node2.find(".need-to-buy").text("before");
